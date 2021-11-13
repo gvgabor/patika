@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feladat</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css"/>
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="feladat.js1"></script>
+
+    </head>
+    <body>
+        <div class="uk-section">
+            <div class="uk-container">
+                <div class="uk-section uk-section-muted uk-padding">
+                    <h1 class="uk-heading-small">Feladat</h1>
+                    <div class="">
+                        A feladat.js1 fájlban dolgozza ki az F.kiemel JS függvényt, ami az alábbi gombra kattintva a
+                        lenti táblázatban zölddel (uk-text-success class) kiemeli a 100 000 forintnál
+                        nagyobb tételeket, pirossal (uk-text-danger CSS class) pedig a 30 000 forint alattiakat.<br/>
+                        A feladathoz jQuery használható.
+                    </div>
+                    <div class="uk-margin">
+                        <button type="button" class="uk-button" id="kiemel">Kiemel</button>
+                        <script>
+                            $('#kiemel').on("click", F.kiemel);
+                        </script>
+                    </div>
+                    <div>
+                        <table class="uk-table uk-table-divider uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Patika</th>
+                                    <th>Település</th>
+                                    <th>Összeg (Ft)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Budapest</td>
+                                    <td class="osszeg">106304</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Debrecen</td>
+                                    <td class="osszeg">132765</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Érd</td>
+                                    <td class="osszeg">27458</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Gyömrő</td>
+                                    <td class="osszeg">110532</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Győr</td>
+                                    <td class="osszeg">40764</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Maglód</td>
+                                    <td class="osszeg">139365</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Miskolc</td>
+                                    <td class="osszeg">18830</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Nyíregyháza</td>
+                                    <td class="osszeg">43631</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Szeged</td>
+                                    <td class="osszeg">144630</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Szentendre</td>
+                                    <td class="osszeg">25926</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Szombathely</td>
+                                    <td class="osszeg">48282</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Üllő</td>
+                                    <td class="osszeg">78418</td>
+                                </tr>
+                                <tr>
+                                    <td>Arany sas Patika</td>
+                                    <td>Vecsés</td>
+                                    <td class="osszeg">110629</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Budapest</td>
+                                    <td class="osszeg">157968</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Debrecen</td>
+                                    <td class="osszeg">154722</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Érd</td>
+                                    <td class="osszeg">18299</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Gyömrő</td>
+                                    <td class="osszeg">100082</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Győr</td>
+                                    <td class="osszeg">33024</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Maglód</td>
+                                    <td class="osszeg">195054</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Miskolc</td>
+                                    <td class="osszeg">48019</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Nyíregyháza</td>
+                                    <td class="osszeg">43304</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Szeged</td>
+                                    <td class="osszeg">122936</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Szentendre</td>
+                                    <td class="osszeg">32859</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Szombathely</td>
+                                    <td class="osszeg">66799</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Üllő</td>
+                                    <td class="osszeg">86429</td>
+                                </tr>
+                                <tr>
+                                    <td>Kereszt Patika</td>
+                                    <td>Vecsés</td>
+                                    <td class="osszeg">29583</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Budapest</td>
+                                    <td class="osszeg">145941</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Debrecen</td>
+                                    <td class="osszeg">153996</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Érd</td>
+                                    <td class="osszeg">115435</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Gyömrő</td>
+                                    <td class="osszeg">82228</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Győr</td>
+                                    <td class="osszeg">29465</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Maglód</td>
+                                    <td class="osszeg">74596</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Miskolc</td>
+                                    <td class="osszeg">97508</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Nyíregyháza</td>
+                                    <td class="osszeg">57395</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Szeged</td>
+                                    <td class="osszeg">72450</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Szentendre</td>
+                                    <td class="osszeg">58949</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Szombathely</td>
+                                    <td class="osszeg">76284</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Üllő</td>
+                                    <td class="osszeg">68731</td>
+                                </tr>
+                                <tr>
+                                    <td>Mérleg Gyógyszertár</td>
+                                    <td>Vecsés</td>
+                                    <td class="osszeg">87263</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Budapest</td>
+                                    <td class="osszeg">135813</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Debrecen</td>
+                                    <td class="osszeg">179151</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Érd</td>
+                                    <td class="osszeg">38936</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Gyömrő</td>
+                                    <td class="osszeg">203489</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Győr</td>
+                                    <td class="osszeg">34064</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Maglód</td>
+                                    <td class="osszeg">117721</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Miskolc</td>
+                                    <td class="osszeg">29368</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Nyíregyháza</td>
+                                    <td class="osszeg">28953</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Szeged</td>
+                                    <td class="osszeg">117113</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Szentendre</td>
+                                    <td class="osszeg">28661</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Szombathely</td>
+                                    <td class="osszeg">76953</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Üllő</td>
+                                    <td class="osszeg">81399</td>
+                                </tr>
+                                <tr>
+                                    <td>Sas Patika</td>
+                                    <td>Vecsés</td>
+                                    <td class="osszeg">38746</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
